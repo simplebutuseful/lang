@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lang</title>
+    <link rel="manifest" href="/lang/manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/icon-512.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="white"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Lang">
+    <meta name="msapplication-TileImage" content="images/icon-128.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <script src="js/main.js"></script>
+</head>
+<body class="">
+
+<div class="">
+        Punctuation and numbers are not transliterated.
+	<div>
+		Glyph set:
+		<select name="fonts" id="font-form" class="">
+			<option value="fantasy1">Fantasy 1</option>
+			<option value="fantasy2">Fantasy 2</option>
+			<option value="fantasy3">Fantasy 3</option>
+			<option value="fantasy4">Fantasy 4</option>
+		</select>
+	</div>
+
+	<div class="">
+		<textarea type="text" name="name" id="text-form" class="" ></textarea>
+	</div>
+	<div>
+		Font widh:
+		<input type="text" name="name" id="fontsize-form" class="" value="20" />
+	</div>
+	<button class="" type="button" onclick="transliterate()">transliterate</button>
+</div>
+
+<div class="" style="padding:1em;" id="output">
+Output of transliteration will be shown here...
+</div>
+
+</body>
+</html>
